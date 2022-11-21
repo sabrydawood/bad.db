@@ -1,6 +1,6 @@
 {
   "name": "bad.db",
-  "version": "0.0.2",
+  "version": "0.0.2-fix",
   "description": "JSON file database.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/virgel1995/bed.db.git"
+    "url": "git+https://github.com/virgel1995/bad.db.git"
   },
   "keywords": [
     "database",
@@ -44,7 +44,7 @@
     "SQL"
   ],
   "bugs": {
-    "url": "https://github.com/virgel1995/bed.db/issues"
+    "url": "https://github.com/virgel1995/bad.db/issues"
   },
   "homepage": "https://clony.vercel.app/doc/bad.db"
 }
