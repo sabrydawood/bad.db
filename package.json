@@ -1,6 +1,6 @@
 {
   "name": "bad.db",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON file database.",
   "main": "index.js",
   "scripts": {
@@ -46,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/virgel1995/bed.db/issues"
   },
-  "homepage": "https://clony.vercel.app/doc/bed.db"
+  "homepage": "https://clony.vercel.app/doc/bad.db"
 }
