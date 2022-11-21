@@ -112,18 +112,11 @@ const deletedUser = await db("users").update({ email: "anyEmail@NewEmail.com" })
       "$id": "8c8f128e-4905-4e77-b664-e03f6de5e952",
       "$createdAt": "2021-09-05T21:40:27Z"
     },{
-      "name": "kenza",
-      "email": "kenza@example.com",
+      "name": "hassona",
+      "email": "hassona@example.com",
       "$id": "8c8f128e-4905-4e77-b664-e03f6de5e952",
       "$createdAt": "2021-09-05T21:40:27Z"
-    },
-    {
-      "name": "ambratolm",
-      "email": "ambratolm@example.com",
-      "$id": "5211133c-a183-4c99-90ab-f857adf5442a",
-      "$createdAt": "2002-11-01T22:12:55Z",
-      "$updatedAt": "2021-10-02T00:00:00Z"
-    }
+		}
   ]
 }
 ```
@@ -133,7 +126,7 @@ const deletedUser = await db("users").update({ email: "anyEmail@NewEmail.com" })
 ## 🚩 Initialize
 
 ```js
-// Initialize with a "db.json" file in the root directory
+// Initialize with a "bad.json" file in the root directory
 const db = await badDb();
 
 // Initialize with a custom named JSON file in the root directory
@@ -157,8 +150,10 @@ Query parameter in `Read`, `Update`, and `Delete` methods is an object or functi
 }
 ```
 
-Query object is an object of property values to match against collection items.<br />
-A comparison is performed between every item object property values in collection and the query object property values to determine if an item object contains equivalences.<br />
+Query object is an object of property values to match against collection items.
+
+A comparison is performed between every item object property values in collection and the query object property values to determine if an item object contains equivalences.
+
 The items containing the equivalences are returned.
 
 Example:
@@ -178,8 +173,10 @@ const users = await db("users").read(queryObj);
 (item, index?, collection?) => [Boolean]
 ```
 
-Query function is a predicate called for every item when iterating over items of collection.<br />
-All items predicate returns truthy for are returned.<br />
+Query function is a predicate called for every item when iterating over items of collection.
+
+All items predicate returns truthy for are returned.
+
 The predicate is invoked with three arguments :
 - `value` : **Required**. The value of the current item.
 - `index` : _Optional_. The index of the current item in collection.
@@ -233,9 +230,12 @@ const createdUser = await db("users").create(user, options);
 await db(collectionName).create(item?, options?);
 ```
 
-Creates a new item in a collection.<br />
-💡 If the specified collection doesn't exist it will be created automatically.<br />
-💡 If no item object is specified (omitted, `null`, or `undefined`), an empty item is created with no fields except the system fields (with names starting with $ sign).<br />
+Creates a new item in a collection.
+
+💡 If the specified collection doesn't exist it will be created automatically.
+
+💡 If no item object is specified (omitted, `null`, or `undefined`), an empty item is created with no fields except the system fields (with names starting with $ sign).
+
 💡 The created item is returned.
 
 | Parameter      | Type   | Default | Description                             |
@@ -412,10 +412,14 @@ const updatedPlayer = await db("players").update(
 await db(collectionName).delete(query?, options?);
 ```
 
-Deletes an existing item in a collection.<br />
-💡 If the specified collection doesn't exist it will be created automatically.<br />
-💡 If no query is specified (omitted, `null`, or `undefined`), no item is deleted.<br />
-💡 If an empty query `{}` is specified, all items are deleted.<br />
+Deletes an existing item in a collection.
+
+💡 If the specified collection doesn't exist it will be created automatically.
+
+💡 If no query is specified (omitted, `null`, or `undefined`), no item is deleted.
+
+💡 If an empty query `{}` is specified, all items are deleted.
+
 💡 The deleted items are returned.
 
 | Parameter      | Type   | Default | Description                       |
