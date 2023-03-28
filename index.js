@@ -16,7 +16,7 @@ module.exports = badDb;
 //------------------------------------------------------------------------------
 // ● badDb-Main
 //------------------------------------------------------------------------------
-async function badDb(filePath = "./bad.json") {
+async function badDb(filePath = "./bad") {
   const file = fileProvider(filePath);
   let dataObj = await file.load();
   if (isEmpty(dataObj)) await file.save(dataObj);

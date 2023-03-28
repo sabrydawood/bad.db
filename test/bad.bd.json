@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "anyName",
+      "email": "anyEmail@email.com",
+      "password": "$2a$12$BsU.WEPC6.6RomaXoyfcketR5GHklECYmrFHQVo8T7lBh2XbTkDNK",
+      "$id": "2b25acad-a846-4d98-9eaa-76ba4ab095f4",
+      "$createdAt": "2023-03-28T18:21:47.648Z"
+    }
+  ]
+}

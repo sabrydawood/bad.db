@@ -60,8 +60,8 @@ const virusDb = require("bad.db");
 
 // Initialize database
 // 💡 By default, A "db.json" file will be created in root directory
-const db = await virusDb();
-
+(async() =>{
+const db = await virusDb(__dirname + "/bad.bd.json");
 // Create a new item within a collection named "users"
 // 💡 If the collection doesn't exist it will be created automatically
 // 💡 With the utility option "encrypt", the "password" field
@@ -99,6 +99,9 @@ const updatedUser = await db("users").update(
 
 // Delete all "users" items where "email" is "anyEmail@NewEmail.com"
 const deletedUser = await db("users").update({ email: "anyEmail@NewEmail.com" });
+
+})()
+
 ```
 
 💡 A JSON file named `bad.json` (by default) is created in the root directory. This is an example of its content :
