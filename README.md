@@ -56,12 +56,12 @@ yarn add bad.db
 
 ```js
 // Require library
-const virusDb = require("bad.db");
+const { JsonDb } = require("../");
 
 // Initialize database
 // 💡 By default, A "db.json" file will be created in root directory
 (async() =>{
-const db = await virusDb(__dirname + "/bad.bd.json");
+const db = await JsonDb(__dirname + "/bad.bd.json");
 // Create a new item within a collection named "users"
 // 💡 If the collection doesn't exist it will be created automatically
 // 💡 With the utility option "encrypt", the "password" field
@@ -129,14 +129,12 @@ const deletedUser = await db("users").update({ email: "anyEmail@NewEmail.com" })
 ## 🚩 Initialize
 
 ```js
-// Initialize with a "bad.json" file in the root directory
-const db = await badDb();
 
 // Initialize with a custom named JSON file in the root directory
-const db = await badDb("my-database-file.json");
+const db = await JsonDb("my-database-file.json");
 
 // Initialize with a custom named JSON file in the current directory
-const db = await badDb(__dirname + "/my-database-file");
+const db = await badDb(__dirname + "/my-database-file.json");
 ```
 
 ## 🔎 Query

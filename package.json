@@ -5,19 +5,18 @@
   "main": "index.js",
   "scripts": {
     "readme": "markdown-toc -i README.md",
-    "test": "nodemon test/ --ignore bad.json --ignore big.db.json",
     "format": "prettier .",
-		"new" : "node test/new.js"
+		"json" : "node test/json.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "i": "^0.3.7",    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.21",
-    "markdown-toc": "^1.2.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20",
+    "i": "^0.3.7",    
+		"jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21"
+	},
+"devDependencies": {
+    "nodemon": "^2.0.20",        
+	  "markdown-toc": "^1.2.0",
     "prettier": "^2.7.1"
   },
   "author": "virus24",

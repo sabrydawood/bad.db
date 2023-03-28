@@ -1,8 +1,8 @@
-const virusDb = require("../");
+const { JsonDb } = require("../");
 // Initialize database
 // 💡 By default, A "db.json" file will be created in root directory
 (async () => {
-const db = await virusDb(__dirname + "/bad.bd.json");
+const db = await JsonDb(__dirname + "/bad.bd.json");
 
 const createdUser = await db("users").create(
   {
