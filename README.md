@@ -56,7 +56,7 @@ yarn add bad.db
 
 ```js
 // Require library
-const { JsonDb } = require("../");
+const { JsonDb } = require("bad.db");
 
 // Initialize database
 // 💡 By default, A "db.json" file will be created in root directory
